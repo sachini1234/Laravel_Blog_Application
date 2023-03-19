@@ -1,6 +1,6 @@
 Home Page Screenshot
 
-![home]!(https://user-images.githubusercontent.com/57388062/226155629-f0d285da-2419-4843-9cca-658fea111b28.png)
+![home](https://user-images.githubusercontent.com/57388062/226155738-7a1daad2-dd90-4dc3-83a7-03fe07fd678f.png)
 
 
 Create Post Page Screenshot
