@@ -1,17 +1,19 @@
 @extends('layouts.homenavbar')
 
+<!-- Content of all blog posts  -->
 @section('content')
 
 <main class="container">
     <div class="p-md-5 rounded bg-dark text-white">
         <div class="col-md-6 px-0">
-            <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
-            <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+            <h1 class="display-4 fst-italic">Publish your passions, your way</h1>
+            <p class="lead my-3">The best free blog website platforms are great if you want to promote your work online, but you've got a budget of exactly zero money. But saving isn't the only benefit the these free blog website platforms.</p>
             <p class="lead mb-0"><a href="#" class="text-white fw-bold text-decoration-none">Continue reading...</a></p>
         </div>
     </div>
 
     <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Show all newly created posts -->
         @foreach ($posts as $posts)
         <div class="col">
             <div class="card border-dark my-4">

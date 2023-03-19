@@ -1,5 +1,6 @@
 @extends('layouts.navbar')
 
+<!-- Edit post form content -->
 @section('content')
 <div class="container">
     <div class="row justify-content-center">

@@ -11,8 +11,9 @@ return new class extends Migration
      *
      * @return void
      */
-    public function up()
+    public function up() 
     {
+        /* Create Posts Table */
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
@@ -20,7 +21,8 @@ return new class extends Migration
             $table->text('description');
             $table->timestamps();
 
-            $table->foreign('user_id')->references('id')->on('users');
+            // Relationship between id of user table and user_id of posts tabel
+            $table->foreign('user_id')->references('id')->on('users'); 
         });
     }
 

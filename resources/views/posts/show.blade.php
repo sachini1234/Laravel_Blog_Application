@@ -1,5 +1,6 @@
 @extends('layouts.navbar')
 
+<!-- Show load content of one post -->
 @section('content')
 
 <div class="container">
@@ -9,6 +10,7 @@
         <p class="description">{{$posts->description}}</p>
     </div>
 
+    <!-- Add comment section -->
     <div>
         @comments(['model' => $posts])
     </div>

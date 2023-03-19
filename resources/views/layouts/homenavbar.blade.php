@@ -15,11 +15,12 @@
         <!-- Styles -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+        <link href="{{ asset('css/blog.css') }}" rel="stylesheet">
     </head>
     <body class="antialiased">
         <div>
             
-            <nav class="navbar navbar-expand-md navbar-dark bg-warning">
+            <nav class="navbar navbar-expand-md navbar-light bg-warning">
                 <div class="container">
                     <a class="navbar-brand" href="{{ url('/') }}">Blogllc</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -74,8 +75,9 @@
                 </div>
             </nav>
             
+            <!-- Change content -->
             <div class="py-4">
-                @yield('content')
+                @yield('content') 
             </div>
 
             <div>

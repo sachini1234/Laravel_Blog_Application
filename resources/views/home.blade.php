@@ -1,5 +1,6 @@
 @extends('layouts.navbar')
 
+<!-- Create new post -->
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -16,7 +17,7 @@
 
                 <div class="card-body">
                     <form method="post" action="{{ route('posts.store') }}">
-                        @csrf
+                        @csrf <!-- csrf used for security -->
                         <div class="form-group">
                             <label class="mb-2">Title of the post:</label>
                             <input type="text" name="title" class="form-control" placeholder="Enter your post title" required>

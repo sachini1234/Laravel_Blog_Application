@@ -6,6 +6,7 @@
 
 <!-- Show Comments -->
 <div class="m-1">
+    <h5>Comments</h5>
     <div id="comment-{{ $comment->getKey() }}" class="media">
         <img class="mr-3" src="https://www.gravatar.com/avatar/{{ md5($comment->commenter->email ?? $comment->guest_email) }}.jpg?s=64" alt="{{ $comment->commenter->name ?? $comment->guest_name }} Avatar">
         <div class="media-body">

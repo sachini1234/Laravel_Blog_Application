@@ -9,9 +9,7 @@ class WelcomeController extends Controller
 {
     public function index() {
 
-        $posts = Posts::all();  //Get all posts in the "posts" database table as an array        
-
-        //Show welcome page
-        return view('welcome', compact('posts'));
+        $posts = Posts::all();  //Get all posts in the "posts" database table 
+        return view('welcome', compact('posts')); // Pass the post for welcome page
     }
 }
